@@ -3,7 +3,7 @@ export_all_trello_boards
 
 Script to simplify downloading of all Trello boards
 
-***Note that this is currently not working, due to a change in Trello itself.***
+***Note that this is currently not working, due to a change in Trello itself. See issue 1, and this [question on webapps.stackexchange](http://webapps.stackexchange.com/q/47272/9027)***.
 
 This arose out of my question [Is it possible to export my data from Trello, to back it up?](http://webapps.stackexchange.com/questions/18975/is-it-possible-to-export-my-data-from-trello-to-back-it-up) The accepted answer shows how to download one board, but it's pretty tedious once you've got a few dozen.
 
