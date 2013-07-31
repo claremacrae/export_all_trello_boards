@@ -30,3 +30,8 @@ Rough overview of how to use:
 ## Quicker downloading
 
 * Use a tool such as [DownThemAll](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) to download all the JSON files in one go, to saving having to manually select each one.
+
+## Fixing the names of output files
+
+* Due to the above mentioned issue 1, your saved files will have 8-character hexadecimal filenames.
+* If you wish to give them more meaningful names, follow the instructions on renaming, that are included in the pop-up html window.
