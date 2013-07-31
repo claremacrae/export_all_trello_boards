@@ -17,6 +17,7 @@ else {
         '      <li>Follow "Unix instructions" below' +
         '   </ul>' +
         '</ol>' +
+        '<i>By Clare Macrae: see https://github.com/claremacrae/export_all_trello_boards' +
         '<hr>\n';
     var windows_rename_text =
         '<hr>' +
