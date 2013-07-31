@@ -5,24 +5,14 @@ else {
     with(wnd.document) {
         var s = '<html><base target=_blank>\n';
         for (var i = 0; i < lnks.length; i++) {
-            // urls look like: https://trello.com/board/welcome-board/4e6a8095efa69909ba007382/somename
+            // urls look like: https://trello.com/b/nC8QJJoZ/trello-development
             var board_url = lnks[i].href;
             if (board_url.indexOf("https://trello.com/b/") != -1) {
                 var components = board_url.split("/");
-
-                var http_type = components[0];
-                // components[1] is empty
-                var trello_domain = components[2];
-                var board_keyword = components[3];
                 var board_slug = components[4];
-                var board_id = components[5];
+                //var board_id = components[5];
 
-                var jason_url = http_type + "//";
-                jason_url += trello_domain + "/";
-                jason_url += board_keyword + "/";
-                jason_url += board_id + "/";
-                jason_url += board_slug;
-                jason_url += ".json";
+                var jason_url = "https://trello.com/1/boards/" + board_slug + "?fields=all&actions=all&action_fields=all&actions_limit=1000&cards=all&card_fields=all&card_attachments=true&lists=all&list_fields=all&members=all&member_fields=all&checklists=all&checklist_fields=all&organization=false";
                 s += '<li><a href=' + jason_url + '><span onClick=window.close()>' + lnks[i].text + '</span></a></li>\n';
             }
         }
