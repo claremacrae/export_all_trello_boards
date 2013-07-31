@@ -7,6 +7,10 @@ Script to simplify downloading of all Trello boards
 
 This arose out of my question [Is it possible to export my data from Trello, to back it up?](http://webapps.stackexchange.com/questions/18975/is-it-possible-to-export-my-data-from-trello-to-back-it-up) The accepted answer shows how to download one board, but it's pretty tedious once you've got a few dozen.
 
+# Alternatives
+
+If you have PHP and a Trello API key, or want to get one, you can use [Matthieu Aubry's trello-backup](https://github.com/mattab/trello-backup). Although it requires possibly more steps to set up, it is much quicker to run - which is important if you want to regularly backup your Trello data.  
+
 # Instructions for use
 
 Rough overview of how to use:
