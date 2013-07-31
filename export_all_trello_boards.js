@@ -7,7 +7,7 @@ else {
         for (var i = 0; i < lnks.length; i++) {
             // urls look like: https://trello.com/board/welcome-board/4e6a8095efa69909ba007382/somename
             var board_url = lnks[i].href;
-            if (board_url.indexOf("https://trello.com/board/") != -1) {
+            if (board_url.indexOf("https://trello.com/b/") != -1) {
                 var components = board_url.split("/");
 
                 var http_type = components[0];
