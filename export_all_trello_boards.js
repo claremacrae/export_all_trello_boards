@@ -1,5 +1,5 @@
-javascript: if (frames.length > 1) alert('Sorry, frames detected.');
-else {
+javascript:
+
     // Maintenance Note:
     //      Only use links to Trello download URLs, so user can download
     //      everything on the page.
@@ -51,9 +51,10 @@ else {
                 var components = board_url.split("/");
                 var board_slug = components[4];
                 var board_id = components[5];
+                var filename = board_id + ".json\n";
 
                 var jason_url = "https://trello.com/1/boards/" + board_slug + "?fields=all&actions=all&action_fields=all&actions_limit=1000&cards=all&card_fields=all&card_attachments=true&lists=all&list_fields=all&members=all&member_fields=all&checklists=all&checklist_fields=all&organization=false";
-                hyperlinks_text += '<li><a href=' + jason_url + '><span onClick=window.close()>' + lnks[i].text + '</span></a></li>\n';
+                hyperlinks_text += '<li><a href=' + jason_url + ' download=' + filename + '><span onClick=window.close()>' + lnks[i].text + '</span></a></li>\n';
                 
                 windows_rename_text += "rename " + board_slug + " " + board_id + ".json\n";
                 unix_rename_text += "mv " + board_slug + " " + board_id + ".json\n";
@@ -77,4 +78,3 @@ else {
         lnks.length = 0;
         void(close());
     }
-}
